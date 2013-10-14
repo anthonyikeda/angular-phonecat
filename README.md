@@ -1,5 +1,13 @@
 # AngularJS Phone Catalog Tutorial Application
 
+# Helpful commands
+**Start the node.js webserver:**
+node ./scripts/web-server.js
+
+**Start Jasmine/karma tests:**
+scripts/test.sh
+
+
 ## Overview
 
 This application takes the developer through the process of building a web-application using
