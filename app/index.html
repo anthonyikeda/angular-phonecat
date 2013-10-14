@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
 	<head>
 		<meta charset="utf-8">
 		<title>My HTML File</title>
@@ -10,15 +10,18 @@
 	</head>
 	<body ng-controller="PhoneListCtrl">
 		<ul>
-			<li>
-				<span>Nexus S</span>
-				<p>Fast just got faster with Nexus S</p>
-			</li>
-			<li>
-				<span>Motorola&#8482; with Wi-Fi</span>
-				<p>The next generation tablet</p>
+			<li ng-repeat="phone in phones">
+				{{phone.name}}
+				<p>{{phone.snippet}}</p>
 			</li>
 		</ul>
-		<p>Total number of phones: {{2}}
+		<p>Total number of phones: {{phones.length}}</p>
+
+		<ul>
+			<li ng-repeat="person in people">
+				{{person.name}}
+				<p>{{person.gender}}</p>
+			</li>
+		</ul>
 	</body>
 </html>
